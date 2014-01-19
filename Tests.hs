@@ -5,7 +5,7 @@ import           Distribution.TestSuite
 
 tests :: IO [Test]
 --tests = return []
-tests = return [ {-Test succeeds,-} Test fails ]
+tests = return [ Test succeeds{-, Test fails-} ]
   where
     succeeds = TestInstance
         { run = return $ Finished Pass
